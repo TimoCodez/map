@@ -1,0 +1,13 @@
+/* Setting the Map height to 50% of the screen height */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#map {
+  height: 80%;
+  width: 100%;
+}
