@@ -8,14 +8,44 @@
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Map Pins</title>
   </head>
   <body>
     <div id="map"></div>
-    <!-- Add your input fields here -->
-    <input type="text" id="address" placeholder="Enter address" />
-    <input type="text" id="info" placeholder="Additional Info" />
-    <button onclick="addPin()">Add Pin</button>
+
+    <!-- Input Fields -->
+    <div id="inputArea">
+      <input type="text" id="address" placeholder="Enter address" />
+      <input type="text" id="info" placeholder="Additional Info" />
+      <input type="text" id="inspector" placeholder="Inspector Name" />
+      <input type="date" id="inspectionDate" placeholder="Inspection Date" />
+      <input type="date" id="completedDate" placeholder="Completed Date" />
+      <select id="status">
+        <option value="available">Available</option>
+        <option value="reserved">Reserved</option>
+        <option value="completed">Completed</option>
+      </select>
+      <button onclick="addPin()">Add Pin</button>
+      <button onclick="updatePinData()">Update</button>
+    </div>
+
+    <!-- Display Data -->
+    <table id="dataDisplay">
+      <thead>
+        <tr>
+          <th>Address</th>
+          <th>Info</th>
+          <th>Inspector</th>
+          <th>Inspection Date</th>
+          <th>Completed Date</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be populated dynamically -->
+      </tbody>
+    </table>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="app.js"></script>

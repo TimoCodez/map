@@ -11,3 +11,60 @@ html {
   height: 80%;
   width: 100%;
 }
+
+#inputArea {
+  padding: 20px;
+}
+
+#dataDisplay {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#dataDisplay th,
+#dataDisplay td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#dataDisplay tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#dataDisplay tr:hover {
+  background-color: #ddd;
+}
+
+#dataDisplay th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
